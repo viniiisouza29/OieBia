@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oie kkkk</title>
+    <style>
+        body{
+            background-color: rgb(79, 0, 0);
+            padding-top: 150px;
+        }
+        .painel{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #s{
+            position: center;
+            height: 40px;
+            width: 60px;
+            background-color: rgb(0, 255, 0);
+            border: white;
+            border-radius: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-right: 0px;
+        }
+        #n{
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: rgb(255, 0, 0);
+            border: white;
+            border-radius: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 15px;
+        }
+        #i{
+            width: 500px;
+            height: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="painel">
+        <h1>Oie Beatriz!!</h1>
+        <img id="i" src="https://i.gifer.com/WzY1.gif" alt="">
+        <h3>Você aceita ir comigo no cinema dia  18/05/24???</h3>
+        
+        <a href="https://youtu.be/KXw8CRapg7k?si=2Bp_zG0keVvMvwV1&t=40"><button id="s" onclick="eba()">Sim</button></a>
+
+        <a><button onmouseover="fuja()" id="n">Não</button></a>
+        
+    </div>
+    <script>
+        function fuja(){
+            var bn = document.getElementById("n")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - bn.offsetWidth;
+            var maxY = alturaJanela - bn.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            bn.style.left = aleatorioX + "px";
+            bn.style.top= aleatorioY + "px";
+
+        }
+        function eba (){
+            alert( " EM TODOS ESSES ANOS NESSA INDUSTRIA VITAL, ESTA É A PRIMEIRA VEZ QUE ISSO ME ACONTECE!! "  )
+        }
+    </script>
+    
+</body>
+</html>
